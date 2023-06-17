@@ -1,0 +1,41 @@
+﻿@model Data.Entities.Product
+
+<div style="background-color:rgb(239,239,239); width:1100px" class="card text-center">
+    <div class="card-header">
+        <ul class="nav nav-pills card-header-pills">
+            <li class="nav-item">
+                <a class="nav-link bg-dark active" asp-action="Index">Back</a>
+            </li>
+        </ul>
+    </div>
+    <div  class="card-body">
+        <div style="width:600px;padding:20px;background-color:white;float:left; text-align:left;margin-left:85px;">
+        <img style="height:250px;margin-bottom:10px" src="@Model.ImageUrl"/>
+
+        <h3 class="card-title">@Model.Title</h3>
+        <p class="card-text">@Model.Category</p>
+        <p>Price: <span class="badge bg-primary">@Model.Price$</span></p>
+        <p>Condition: @Model.Condition</p>
+        <p>Private or buisness : @Model.Price</p>
+        <h4>Description: </h4>
+        <p> @Model.Description</p>
+        </div>
+        <div style="width:350px;padding-left:30px; float:right;background-color:white; text-align:left;border-radius:7px;border: 2px solid white;">
+        <h4>User </h4>
+        <p>Name: Unknown</p>
+        <p>City: @Model.City</p>
+        <p>Contact: @Model.Contact</p>
+            <a style="width:200px; margin:0 auto; margin-bottom:10px;" class="btn btn-primary">Contact</a>
+        </div>
+        <div style="width:350px;padding-left:30px; float:right;background-color:white; text-align:left;border-radius:7px;border: 2px solid white;margin-top:40px">
+            <a style="width:300px; margin:0 auto; margin-bottom:10px; margin-top:10px" class="btn btn-dark">Buy with delivery</a>
+                        <a href="https://dostavka.olx.ua/?utm_source=olx_ua_delivery&amp;utm_medium=olx_ad_banner&amp;utm_campaign=banner_delivery_info" target="_blank" rel="noreferrer"></a>
+                            <img style="width:300px;" src="https://cdn.ua-rock.eu-sharedservices.olxcdn.com/static/uk/images/ua-banner-26.04.23.jpg" alt="promo_banner" class="css-150zkeo">
+                            <p class="css-tw82ga">Способи доставки</p>
+            <p> <img style="height:24px" src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a0/Ukrposhta-ua-icon.svg/1200px-Ukrposhta-ua-icon.svg.png" alt=""><strong>Укрпошта</strong> - від 20 грн.</p>
+
+            <p><img style="height:24px" src="https://play-lh.googleusercontent.com/JgS24PBUj_bet88K9CCLoH7QuqUBydeX9VI3XN2Ss9CmBTkHAX4Ku23kJi2YtIEyZA" alt=""><strong>Нова Пошта</strong> - від 62 грн.</p>
+        </div>
+        </div>
+       <a style="width:100px; margin:0 auto; margin-bottom:10px;" href="#" class="btn btn-success">Buy</a>
+</div>

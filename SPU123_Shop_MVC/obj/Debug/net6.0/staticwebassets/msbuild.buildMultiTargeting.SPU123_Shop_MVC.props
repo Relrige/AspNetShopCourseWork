@@ -1,0 +1,3 @@
+﻿<Project>
+  <Import Project="..\build\SPU123_Shop_MVC.props" />
+</Project>
